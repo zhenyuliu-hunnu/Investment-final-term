@@ -33,6 +33,8 @@ $$
 
 ## 定理三：延长到期时间对债券价格波动的影响是递减的
 
+> 原论文（Malkiel, 1962）证法为求二阶偏导
+
 价格P对时间 T 求二阶偏导：
 $$
 \frac{\partial^{2} P}{\partial T^{2}} =\frac{F\, {\ln \left( y+1 \right)}^{2}}{{\left( y+1 \right)}^{T}} -\frac{C\, {\ln \left( y+1 \right)}^{2}}{y\, {\left( y+1 \right)}^{T}}
@@ -56,11 +58,11 @@ $$
 $$
 （不求和，更简单的形式）
 $$
-\frac{\partial^{2}P}{\partial y^{2}}=\frac{1}{\left(1+y\right)^{2}}\sum_{i=1}^{T}t\frac{(t+1)C(t)}{\left(1+y\right)^{i}}>0
+\frac{\partial^{2}P}{\partial y^{2}}=\frac{1}{\left( 1+y \right)^{2}} \times \left[ \frac{T\left( T+1 \right) F}{\left( 1+y \right)^{T}} +\sum_{i=1}^{T} \frac{i\left( 1+i \right) C}{\left( 1+y \right)^{i}} \right] >0
 $$
 因为一阶导小于零，二阶导大于零，函数凸向原点，因此收益率上升所带来的损失要小于收益率下降所带来的收益。
 
-## 定理五：对于给定的收益率变动幅度，债券的息票率与债券价格的波动幅度成反向变动关系
+## 定理五：息票率越低的债券受市场利率影响越大
 
 债券的波动率对 C 求导：
 $$\partial\frac{\left(\frac{\partial P}{\partial y}\frac{y}{p}\right)}{\partial\mathrm{C}}=\frac{Fy}{\left(1+y\right)\left(\mathrm{C}\left(1+y\right)^{T}-\mathrm{C}+Fy\right)^{2}}\left(1+y+\left(1+y\right)^{T}\left(Ty-1-y\right)\right)$$
